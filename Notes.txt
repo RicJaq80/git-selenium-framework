@@ -56,3 +56,11 @@ git pull
 
 - once we already commit a change, we don't need to use git remote add origin because the local
 repository already knows where the remote repository is
+
+branches
+- is like a private space isolated from default master branch
+- to avoid conflicts, we work on different branches and then merge the code to the master branch
+and the team's changes are reflected on the main branch
+- different branches for every person and for every release
+- once the work is done, then the branch is merged to the Main branch and then the Main branches is
+released
