@@ -26,6 +26,7 @@ to your local copy of the code
 4. push the code to the remote repository (GitHub)
 
 - do not use special character spaces or capital letters in the local directories
+- we can use dash and underscore
 
 - commands:
 git init - makes the selected directory as the git repository
