@@ -47,7 +47,7 @@ git config --global user.email <email>
 
 - to create the connection between the git local repository and the GitHub remote repository
 git remote add origin <remote repository URL>
-git push -u origin master
+git push -u origin main
 
 - to clone a repository, be at the selected level (taken from the git hub page)
 git clone <url.git>
