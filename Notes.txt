@@ -39,6 +39,10 @@ git diff <filename> - shows the difference between recent modification and the p
 minus represents lines deleted 
 plus represents lines added
 git log <filename> - it shows the history of the file
+git config user.name "user name" - this is for one local repository
+git config user.email <email>
+git config --global user.name "user name" - this is for all the repositories
+git config --global user.email <email>
 
 - to create the connection between the git local repository and the GitHub remote repository
 git remote add origin <remote repository URL>
