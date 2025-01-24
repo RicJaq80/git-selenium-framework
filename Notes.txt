@@ -64,3 +64,11 @@ and the team's changes are reflected on the main branch
 - different branches for every person and for every release
 - once the work is done, then the branch is merged to the Main branch and then the Main branches is
 released
+
+- example of flow diagram:
+1. master - 2 private branches
+2. first private branch commit changes to main
+3. main - release of first private branch changes
+4. second private branch pulls from main the changes from step 3
+5. second private branch commit changes to main
+6. release of main
