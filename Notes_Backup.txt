@@ -1,0 +1,59 @@
+Version Control System Notes
+
+- it is a tool that is used when we want to maintain multiple versions of our code files or project
+- it stores files in a remote/central location so several people have access to it
+- whenever there is a change on the code and commit that change, a new version is created
+- it can track the history of changes made to that file
+
+- git is a free and open source distributed version control system
+- in a distributed system a local copy of the code is a complete version control repository
+- local copy -> complete repository with all version history
+- when you check out a project, the entire history of the project is checked out in Git
+- thanks to this, it is possible to work offline or remotely
+
+- github a git repository hosting service, it provides a remote location where we can check in the code
+- it can also be used for code reviews and maintain documentation
+- public and private repositories
+- we use github where we can check in our code to the remote repository
+- team members can check out the code from the remote repository
+
+- flow diagram
+1. working directory (local directory where we have our code) - untracked files
+2. we use: git add <filename> command, then the files go to the staging phase (still not committed)
+3. when done with the work, commit the code into the local repository (still local system)
+NOTE: files are versioned, tracked and inside the local repository. Git has committed the changes
+to your local copy of the code
+4. push the code to the remote repository (GitHub)
+
+- do not use special character spaces or capital letters in the local directories
+- we can use dash and underscore
+
+- commands:
+git init - makes the selected directory as the git repository
+git status - status of the repository
+git add <filename> - to add a file to the local repository
+git rm --cached <filename> - tp unstage
+git checkout -- <filename> - to discard changes in working directory
+git add * - all files will be moved to staging environment (track changes). Ready to commit
+git diff <filename> - shows the difference between recent modification and the previous version
+minus represents lines deleted 
+plus represents lines added
+git log <filename> - it shows the history of the file
+git config user.name "user name" - set the authorization for a particular git repository,
+ specify user name, this is for one local repository
+git config user.email <email>
+git config --global user.name "user name" - this is for all the repositories
+git config --global user.email <email>
+
+- to create the connection between the git local repository and the GitHub remote repository
+git remote add origin <remote repository URL>
+git push -u origin master
+
+- to clone a repository, be at the selected level (taken from the git hub page)
+git clone <url.git>
+
+- to update the local repository
+git pull
+
+- once we already commit a change, we don't need to use git remote add origin because the local
+repository already knows where the remote repository is
