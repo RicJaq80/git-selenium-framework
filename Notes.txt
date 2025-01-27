@@ -69,7 +69,6 @@ and the team's changes are reflected on the main branch
 - once the work is done, then the branch is merged to the Main branch and then the Main branches is
 released
 
-
 Steps:
 $ git init myproject # folder that contains the project files as well as the control files that stores
 # the historical elements, the history snapshots of your documents, images, source code, etc
@@ -91,3 +90,11 @@ tp2 $ git push origin tp2feature
 tp1 $ git pull # this command is critical: bringing all the code into a unified set, mergint together both
 			   # tp1 and tp2's work 
 tp1 $ git merge tp2feature # command that merges all that work together
+=======
+- example of flow diagram:
+1. master - 2 private branches
+2. first private branch commit changes to main
+3. main - release of first private branch changes
+4. second private branch pulls from main the changes from step 3
+5. second private branch commit changes to main
+6. release of main
