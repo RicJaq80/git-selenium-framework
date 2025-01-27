@@ -68,3 +68,26 @@ and the team's changes are reflected on the main branch
 - different branches for every person and for every release
 - once the work is done, then the branch is merged to the Main branch and then the Main branches is
 released
+
+
+Steps:
+$ git init myproject # folder that contains the project files as well as the control files that stores
+# the historical elements, the history snapshots of your documents, images, source code, etc
+$ cd myproject
+$ git add # command that notices the files and puts them in a kind of holding zone, ready to be permanently
+# be commited, and then
+$ git commit -m "comment" # is the key word that actually permanently records a historical version or
+# snapshot of the files as they exist at a given point in time
+
+team work:
+tp1 $ git checkout master
+tp1 $ git commit -a -m "my changes"
+tp1 $ git push
+
+tp2 $ git checkout -b tp2feature
+tp2 $ git commit -a -m "my feature"
+tp2 $ git push origin tp2feature
+
+tp1 $ git pull # this command is critical: bringing all the code into a unified set, mergint together both
+			   # tp1 and tp2's work 
+tp1 $ git merge tp2feature # command that merges all that work together
